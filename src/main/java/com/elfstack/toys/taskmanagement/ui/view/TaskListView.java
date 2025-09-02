@@ -247,8 +247,6 @@ public class TaskListView extends VerticalLayout {
         } else if (d.contains("BRONCHITIS") || d.contains("IB")) {
             return "Infectious Bronchitis (IB) adalah penyakit pernapasan akibat coronavirus yang menyerang ayam.";
         }
-Body
-
         return "Informasi detail penyakit ini belum tersedia.";
     }
 
