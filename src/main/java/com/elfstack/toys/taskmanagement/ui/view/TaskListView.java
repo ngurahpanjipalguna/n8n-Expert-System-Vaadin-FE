@@ -270,7 +270,7 @@ public class TaskListView extends VerticalLayout {
                     .collect(Collectors.joining(","));
             String payload = "{ \"selected\": [" + selectedStr + "] }";
 
-            URL url = new URL("https://panjipalguna1998oke.app.n8n.cloud/webhook/cf-unggas-multi");
+            URL url = new URL("http://38.3.160.20:5677/webhook/cf-unggas-multi");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
@@ -366,7 +366,7 @@ public class TaskListView extends VerticalLayout {
     private double convertToIdr(double usdAmount) {
         HttpURLConnection conn = null;
         try {
-            URL url = new URL("https://panjipalguna1998oke.app.n8n.cloud/webhook/convert-currency");
+            URL url = new URL("http://38.3.160.20:5677/webhook/convert-currency");
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
